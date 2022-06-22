@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27493168-aecf-46dd-ab13-eb730d4e35a3" name="Changes" comment="metod">
+    <list default="true" id="27493168-aecf-46dd-ab13-eb730d4e35a3" name="Changes" comment="metod1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655837208461</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="metod1">
+      <created>1655927475560</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1655927475560</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,6 +196,7 @@
     <MESSAGE value="1" />
     <MESSAGE value="test" />
     <MESSAGE value="metod" />
-    <option name="LAST_COMMIT_MESSAGE" value="metod" />
+    <MESSAGE value="metod1" />
+    <option name="LAST_COMMIT_MESSAGE" value="metod1" />
   </component>
 </project>
