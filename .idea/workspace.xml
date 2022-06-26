@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27493168-aecf-46dd-ab13-eb730d4e35a3" name="Changes" comment="выделенные вспомогательные методы и классы_редакт2">
-      <change afterPath="$PROJECT_DIR$/put_information.py" afterDir="false" />
+    <list default="true" id="27493168-aecf-46dd-ab13-eb730d4e35a3" name="Changes" comment="выделенные вспомогательные методы и классы_редакт3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,7 @@
       <recent name="C:\Users\Jul\PycharmProjects\python_training" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_add_contact.py">
+  <component name="RunManager" selected="Python tests.Python tests in test_add_group.py">
     <configuration name="Python tests in test_add_group.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,9 +101,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests in test_add_group.py" />
         <item itemvalue="Python tests.pytest in test_add_contact.py" />
         <item itemvalue="Python tests.pytest for test_add_group.TestAddGroup" />
-        <item itemvalue="Python tests.Python tests in test_add_group.py" />
       </list>
     </recent_temporary>
   </component>
@@ -229,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656053120653</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="выделенные вспомогательные методы и классы_редакт3">
+      <created>1656063219258</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1656063219258</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -254,6 +260,7 @@
     <MESSAGE value="выделенные вспомогательные методы и классы_редакт" />
     <MESSAGE value="выделенные вспомогательные методы и классы_редакт1" />
     <MESSAGE value="выделенные вспомогательные методы и классы_редакт2" />
-    <option name="LAST_COMMIT_MESSAGE" value="выделенные вспомогательные методы и классы_редакт2" />
+    <MESSAGE value="выделенные вспомогательные методы и классы_редакт3" />
+    <option name="LAST_COMMIT_MESSAGE" value="выделенные вспомогательные методы и классы_редакт3" />
   </component>
 </project>
