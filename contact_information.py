@@ -24,4 +24,3 @@ class Contact_information:
         self.phone2 = phone2
         self.notes = notes
 
-
