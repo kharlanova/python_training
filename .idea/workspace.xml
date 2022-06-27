@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27493168-aecf-46dd-ab13-eb730d4e35a3" name="Changes" comment="урок 2 улучшение читаемости">
-      <change afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
+    <list default="true" id="27493168-aecf-46dd-ab13-eb730d4e35a3" name="Changes" comment="test_add_contact исправление">
+      <change afterPath="$PROJECT_DIR$/application_contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/put_information.py" beforeDir="false" afterPath="$PROJECT_DIR$/put_information.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_contact.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,7 @@
       <recent name="C:\Users\Jul\PycharmProjects\python_training" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in test_add_group.py">
+  <component name="RunManager" selected="Python tests.pytest in test_add_contact.py">
     <configuration name="Python tests in test_add_group.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,8 +103,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in test_add_group.py" />
         <item itemvalue="Python tests.pytest in test_add_contact.py" />
+        <item itemvalue="Python tests.Python tests in test_add_group.py" />
         <item itemvalue="Python tests.pytest for test_add_group.TestAddGroup" />
       </list>
     </recent_temporary>
@@ -243,7 +244,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656249077730</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="фикстура">
+      <created>1656259010469</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1656259010469</updated>
+    </task>
+    <task id="LOCAL-00020" summary="test_add_contact исправление">
+      <created>1656318680247</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1656318680247</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,6 +285,8 @@
     <MESSAGE value="выделенные вспомогательные методы и классы_редакт2" />
     <MESSAGE value="выделенные вспомогательные методы и классы_редакт3" />
     <MESSAGE value="урок 2 улучшение читаемости" />
-    <option name="LAST_COMMIT_MESSAGE" value="урок 2 улучшение читаемости" />
+    <MESSAGE value="фикстура" />
+    <MESSAGE value="test_add_contact исправление" />
+    <option name="LAST_COMMIT_MESSAGE" value="test_add_contact исправление" />
   </component>
 </project>

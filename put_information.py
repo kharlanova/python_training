@@ -1,5 +1,5 @@
 class Put_information:
-    def __init__(self,firstname, middlename, lastname, nickname, title, company, address, home, mobile, work, fax, email, email2, email3, bday, bmonth, byear, aday, amonth, ayear, address2, phone2,notes):
+    def __init__(self,firstname, middlename, lastname, nickname, title, company, address, home, mobile, work_phone, fax, email, email2, email3, bday, bmonth, byear, aday, amonth, ayear, address2, phone2,notes):
         self.firstname = firstname
         self.middlename = middlename
         self.lastname = lastname
@@ -9,7 +9,7 @@ class Put_information:
         self.address = address
         self.home = home
         self.mobile = mobile
-        self.work = work
+        self.work_phone = work_phone
         self.fax = fax
         self.email = email
         self.email2 = email2
