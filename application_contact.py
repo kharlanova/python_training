@@ -100,3 +100,4 @@ class Application_contact:
         wd.get("http://localhost/addressbook/")
     def destroy(self):
         self.wd.quit()
+
