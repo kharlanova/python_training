@@ -2,7 +2,7 @@
 
 import pytest
 from contact_information import Contact_information
-from application import Application_contact
+from fixture.application import Application_contact
 
 
 @pytest.fixture
