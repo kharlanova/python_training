@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27493168-aecf-46dd-ab13-eb730d4e35a3" name="Changes" comment="исправление 4 задания">
+    <list default="true" id="27493168-aecf-46dd-ab13-eb730d4e35a3" name="Changes" comment="созданы пакеты для разных зон ответственности_1">
+      <change afterPath="$PROJECT_DIR$/fixture/session.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,10 +54,12 @@
       <recent name="C:\Users\Jul\PycharmProjects\python_training" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jul\PycharmProjects\python_training\test" />
+      <recent name="C:\Users\Jul\PycharmProjects\python_training\fixture" />
       <recent name="C:\Users\Jul\PycharmProjects\python_training\model" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.class">
+  <component name="RunManager" selected="Python tests.Python tests in test_add_group.py">
     <configuration name="class" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,8 +129,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.class" />
         <item itemvalue="Python tests.Python tests in test_add_group.py" />
+        <item itemvalue="Python.class" />
         <item itemvalue="Python tests.pytest in test_add_contact.py" />
         <item itemvalue="Python tests.pytest for test.test_add_group" />
       </list>
@@ -338,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656501743175</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="созданы пакеты для разных зон ответственности_1">
+      <created>1656605938136</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1656605938136</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -370,6 +380,7 @@
     <MESSAGE value="fixture исправление" />
     <MESSAGE value="fixture исправление1" />
     <MESSAGE value="исправление 4 задания" />
-    <option name="LAST_COMMIT_MESSAGE" value="исправление 4 задания" />
+    <MESSAGE value="созданы пакеты для разных зон ответственности_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="созданы пакеты для разных зон ответственности_1" />
   </component>
 </project>
