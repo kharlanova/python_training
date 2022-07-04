@@ -25,3 +25,4 @@ class SessionHelper:
         wd.find_element_by_link_text("Logout").click()
         wd.find_element_by_name("user").clear()
         wd.find_element_by_name("user").send_keys("admin")
+
