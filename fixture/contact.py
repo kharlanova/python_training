@@ -92,3 +92,27 @@ class ContactHelper:
     def init_contact_creation(self):
         wd = self.app.wd
         wd.find_element_by_link_text("add new").click()
+
+    def delete_first_contact(self):
+        wd = self.app.wd
+        wd.find_element_by_xpath("//img[@alt='Edit']").click()
+        wd.find_element_by_xpath("//div[@id='content']/form[2]/input[2]").click()
+        self.return_to_home_page()
+
+    def update_first_contact(self):
+        wd = self.app.wd
+        wd.find_element_by_xpath("//img[@alt='Edit']").click()
+        wd.find_element_by_name("firstname").click()
+        wd.find_element_by_name("firstname").clear()
+        wd.find_element_by_name("firstname").send_keys("Ivan123")
+        wd.find_element_by_name("middlename").click()
+        wd.find_element_by_name("middlename").clear()
+        wd.find_element_by_name("middlename").send_keys("Ivanovich123")
+        wd.find_element_by_name("lastname").click()
+        wd.find_element_by_name("lastname").clear()
+        wd.find_element_by_name("lastname").send_keys("Petrov123")
+        wd.find_element_by_xpath("//div[@id='content']/form/input[22]").click()
+        self.return_to_home_page()
+
+
+
