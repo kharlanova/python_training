@@ -18,10 +18,8 @@ class ContactHelper:
         wd = self.app.wd
         wd.find_element_by_link_text("add new").click()
 
-
-    def contact_information(self,contact):
+    def fill_data(self,contact):
         wd = self.app.wd
-        self.init_contact_creation()
         wd.find_element_by_name("firstname").click()
         wd.find_element_by_name("firstname").send_keys(contact.firstname)
         wd.find_element_by_name("middlename").click()
@@ -87,6 +85,13 @@ class ContactHelper:
         wd.find_element_by_name("notes").click()
         wd.find_element_by_name("notes").clear()
         wd.find_element_by_name("notes").send_keys(contact.notes)
+
+
+    def contact_information(self,contact):
+        wd = self.app.wd
+        self.init_contact_creation()
+        self.fill_data(contact)
+
         wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
 
     def init_contact_creation(self):
@@ -95,22 +100,16 @@ class ContactHelper:
 
     def delete_first_contact(self):
         wd = self.app.wd
+        self.return_to_home_page()
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
         wd.find_element_by_xpath("//div[@id='content']/form[2]/input[2]").click()
         self.return_to_home_page()
 
-    def update_first_contact(self):
+    def update_first_contact(self,contact):
         wd = self.app.wd
+        self.return_to_home_page()
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
-        wd.find_element_by_name("firstname").click()
-        wd.find_element_by_name("firstname").clear()
-        wd.find_element_by_name("firstname").send_keys("Ivan123")
-        wd.find_element_by_name("middlename").click()
-        wd.find_element_by_name("middlename").clear()
-        wd.find_element_by_name("middlename").send_keys("Ivanovich123")
-        wd.find_element_by_name("lastname").click()
-        wd.find_element_by_name("lastname").clear()
-        wd.find_element_by_name("lastname").send_keys("Petrov123")
+        self.fill_data(contact)
         wd.find_element_by_xpath("//div[@id='content']/form/input[22]").click()
         self.return_to_home_page()
 
