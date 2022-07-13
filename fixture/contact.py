@@ -24,14 +24,14 @@ class ContactHelper:
         wd.find_element_by_name("firstname").send_keys(contact.firstname)
         wd.find_element_by_name("middlename").click()
         wd.find_element_by_name("middlename").send_keys(contact.middlename)
-        wd.find_element_by_name("theform").click()
+        # wd.find_element_by_name("theform").click()
         wd.find_element_by_name("lastname").click()
         wd.find_element_by_name("lastname").clear()
         wd.find_element_by_name("lastname").send_keys(contact.lastname)
         wd.find_element_by_name("nickname").click()
         wd.find_element_by_name("nickname").clear()
         wd.find_element_by_name("nickname").send_keys(contact.nickname)
-        wd.find_element_by_name("theform").click()
+        # wd.find_element_by_name("theform").click()
         wd.find_element_by_name("title").click()
         wd.find_element_by_name("title").clear()
         wd.find_element_by_name("title").send_keys(contact.title)
@@ -105,7 +105,7 @@ class ContactHelper:
         wd.find_element_by_xpath("//div[@id='content']/form[2]/input[2]").click()
         self.return_to_home_page()
 
-    def update_first_contact(self,contact):
+    def modify_first_contact(self,contact):
         wd = self.app.wd
         self.return_to_home_page()
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
@@ -113,5 +113,7 @@ class ContactHelper:
         wd.find_element_by_xpath("//div[@id='content']/form/input[22]").click()
         self.return_to_home_page()
 
-
-
+    def count(self):
+        wd = self.app.wd
+        self.return_to_home_page()
+        return len(wd.find_elements_by_name("selected[]"))
