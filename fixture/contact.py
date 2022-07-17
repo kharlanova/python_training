@@ -8,7 +8,8 @@ class ContactHelper:
 
     def return_to_home_page(self):
         wd = self.app.wd
-        wd.find_element_by_link_text("home").click()
+        if not (wd.current_url.endswith("addressbook/") and len(wd.find_elements_by_xpath('//*[@title="Details"]')) > 0):
+            wd.find_element_by_link_text("home").click()
 
     def submit_contact_creation(self):
         wd = self.app.wd
