@@ -1,4 +1,5 @@
 from selenium.webdriver.support.select import Select
+from model.contact import Contact
 
 
 class ContactHelper:
@@ -22,8 +23,10 @@ class ContactHelper:
     def fill_data(self,contact):
         wd = self.app.wd
         wd.find_element_by_name("firstname").click()
+        wd.find_element_by_name("firstname").clear()
         wd.find_element_by_name("firstname").send_keys(contact.firstname)
         wd.find_element_by_name("middlename").click()
+        wd.find_element_by_name("middlename").clear()
         wd.find_element_by_name("middlename").send_keys(contact.middlename)
         # wd.find_element_by_name("theform").click()
         wd.find_element_by_name("lastname").click()
@@ -118,3 +121,18 @@ class ContactHelper:
         wd = self.app.wd
         self.return_to_home_page()
         return len(wd.find_elements_by_name("selected[]"))
+
+    def get_contact_list(self):
+        wd = self.app.wd
+        self.return_to_home_page()
+        contacts = []
+        rows = wd.find_elements_by_xpath('//table[@id="maintable"]//tr')
+        for element in rows[1:]:
+            tds = element.find_elements_by_xpath(".//child::td")
+            s = tds[6].find_element_by_xpath("./a[@href]").get_attribute("href")# link with id 'http://localhost/addressbook/view.php?id=27'
+            id_number = int(s.split("id=")[1])
+            firstname = tds[2].text
+            lastname = tds[1].text
+            contacts.append(Contact(firstname=firstname, lastname =lastname , id=id_number))
+
+        return contacts
