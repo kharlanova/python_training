@@ -95,6 +95,7 @@ class ContactHelper:
         wd = self.app.wd
         self.init_contact_creation()
         self.fill_data(contact)
+        self.contact_cache = None
 
         wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
 
@@ -108,6 +109,7 @@ class ContactHelper:
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
         wd.find_element_by_xpath("//div[@id='content']/form[2]/input[2]").click()
         self.return_to_home_page()
+        self.contact_cache = None
 
     def modify_first_contact(self,contact):
         wd = self.app.wd
@@ -116,23 +118,29 @@ class ContactHelper:
         self.fill_data(contact)
         wd.find_element_by_xpath("//div[@id='content']/form/input[22]").click()
         self.return_to_home_page()
+        self.contact_cache = None
+
+
 
     def count(self):
         wd = self.app.wd
         self.return_to_home_page()
         return len(wd.find_elements_by_name("selected[]"))
 
-    def get_contact_list(self):
-        wd = self.app.wd
-        self.return_to_home_page()
-        contacts = []
-        rows = wd.find_elements_by_xpath('//table[@id="maintable"]//tr')
-        for element in rows[1:]:
-            tds = element.find_elements_by_xpath(".//child::td")
-            s = tds[6].find_element_by_xpath("./a[@href]").get_attribute("href")# link with id 'http://localhost/addressbook/view.php?id=27'
-            id_number = int(s.split("id=")[1])
-            firstname = tds[2].text
-            lastname = tds[1].text
-            contacts.append(Contact(firstname=firstname, lastname =lastname , id=id_number))
+    contact_cache = None
 
-        return contacts
+    def get_contact_list(self):
+        if self.contact_cache is None:
+            wd =self.app.wd
+            self.return_to_home_page()
+            self.contact_cache = []
+            rows = wd.find_elements_by_xpath('//table[@id="maintable"]//tr')
+            for element in rows[1:]:
+                tds = element.find_elements_by_xpath(".//child::td")
+                s = tds[6].find_element_by_xpath("./a[@href]").get_attribute("href")# link with id 'http://localhost/addressbook/view.php?id=27'
+                id_number = int(s.split("id=")[1])
+                firstname = tds[2].text
+                lastname = tds[1].text
+                self.contact_cache.append(Contact(firstname=firstname, lastname =lastname , id=id_number))
+
+        return list(self.contact_cache)
