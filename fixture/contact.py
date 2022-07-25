@@ -103,22 +103,34 @@ class ContactHelper:
         wd = self.app.wd
         wd.find_element_by_link_text("add new").click()
 
-    def delete_first_contact(self):
+    def delete_contact_by_index(self, index):
         wd = self.app.wd
         self.return_to_home_page()
-        wd.find_element_by_xpath("//img[@alt='Edit']").click()
-        wd.find_element_by_xpath("//div[@id='content']/form[2]/input[2]").click()
+        self.select_contact_by_index(index)
+        wd.find_element_by_xpath("//input[@value='Delete']").click()
+        alert = wd.switch_to_alert()
+        alert.accept()
+
         self.return_to_home_page()
         self.contact_cache = None
 
-    def modify_first_contact(self,contact):
+
+    def delete_first_contact(self):
+        self.delete_contact_by_index(0)
+
+    def modify_contact_by_index(self,index,contact):
         wd = self.app.wd
         self.return_to_home_page()
-        wd.find_element_by_xpath("//img[@alt='Edit']").click()
+        row = wd.find_elements_by_name("entry")[index]
+        cell = row.find_elements_by_tag_name("td")[7]
+        cell.find_element_by_tag_name("a").click()
         self.fill_data(contact)
         wd.find_element_by_xpath("//div[@id='content']/form/input[22]").click()
         self.return_to_home_page()
         self.contact_cache = None
+
+    def modify_first_contact(self,contact):
+        self.modify_contact_by_index(0,contact)
 
 
 
@@ -144,3 +156,15 @@ class ContactHelper:
                 self.contact_cache.append(Contact(firstname=firstname, lastname =lastname , id=id_number))
 
         return list(self.contact_cache)
+
+    def select_contact_by_index(self,index):
+        wd = self.app.wd
+        wd.find_elements_by_name("selected[]")[index].click()
+
+    def select_first_contact(self):
+        self.select_contact_by_index(0)
+
+
+
+
+
