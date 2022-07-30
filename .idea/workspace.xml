@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27493168-aecf-46dd-ab13-eb730d4e35a3" name="Changes" comment="Задание 15,16">
-      <change afterPath="$PROJECT_DIR$/target.json.py" afterDir="false" />
+    <list default="true" id="27493168-aecf-46dd-ab13-eb730d4e35a3" name="Changes" comment="Задание 14 исправление">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_data_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_data_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target.json.py" beforeDir="false" afterPath="$PROJECT_DIR$/target.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +60,7 @@
       <recent name="C:\Users\Jul\PycharmProjects\python_training\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_data_contact.test_data_contact_on_home_page">
+  <component name="RunManager" selected="Python tests.pytest in test_data_contact.py">
     <configuration name="group" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,8 +148,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_data_contact.test_data_contact_on_home_page" />
         <item itemvalue="Python tests.pytest in test_data_contact.py" />
+        <item itemvalue="Python tests.pytest for test_data_contact.test_data_contact_on_home_page" />
         <item itemvalue="Python tests.pytest in test_add_contact.py" />
         <item itemvalue="Python tests.pytest in test_add_group.py" />
         <item itemvalue="Python.group" />
@@ -164,13 +164,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655633244517</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Initial commit">
-      <created>1655663918174</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1655663918174</updated>
     </task>
     <task id="LOCAL-00003" summary="Initial commit">
       <created>1655663980340</created>
@@ -508,7 +501,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659024321546</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Задание 14 исправление">
+      <created>1659174290505</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1659174290521</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -523,7 +523,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test_add_contact исправление" />
     <MESSAGE value="fixture исправление" />
     <MESSAGE value="fixture исправление1" />
     <MESSAGE value="исправление 4 задания" />
@@ -548,6 +547,7 @@
     <MESSAGE value="Режем строки на части: делаем тесты для проверки телефонов" />
     <MESSAGE value="Задание 14" />
     <MESSAGE value="Задание 15,16" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание 15,16" />
+    <MESSAGE value="Задание 14 исправление" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание 14 исправление" />
   </component>
 </project>
