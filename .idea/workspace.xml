@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27493168-aecf-46dd-ab13-eb730d4e35a3" name="Changes" comment="Отделение тестовых данных от сценария">
-      <change afterPath="$PROJECT_DIR$/generator/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generator/contacts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generator/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/groups.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
+    <list default="true" id="27493168-aecf-46dd-ab13-eb730d4e35a3" name="Changes" comment="Задание 18">
+      <change beforePath="$PROJECT_DIR$/test/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +58,7 @@
       <recent name="C:\Users\Jul\PycharmProjects\python_training\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.contacts">
+  <component name="RunManager" selected="Python tests.pytest in test_add_contact.py">
     <configuration name="contacts" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -107,7 +101,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_data_contact.test_data_contact_on_home_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in test_add_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -119,8 +113,8 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_data_contact.test_data_contact_on_home_page&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_add_contact.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="pytest in test_add_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -158,17 +152,17 @@
     <list>
       <item itemvalue="Python.contacts" />
       <item itemvalue="Python.group" />
-      <item itemvalue="Python tests.pytest for test_data_contact.test_data_contact_on_home_page" />
+      <item itemvalue="Python tests.pytest in test_add_contact.py" />
       <item itemvalue="Python tests.pytest in test_add_group.py" />
       <item itemvalue="Python tests.pytest in test_data_contact.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_add_contact.py" />
         <item itemvalue="Python.contacts" />
         <item itemvalue="Python tests.pytest in test_add_group.py" />
         <item itemvalue="Python.group" />
         <item itemvalue="Python tests.pytest in test_data_contact.py" />
-        <item itemvalue="Python tests.pytest for test_data_contact.test_data_contact_on_home_page" />
       </list>
     </recent_temporary>
   </component>
@@ -180,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655633244517</updated>
-    </task>
-    <task id="LOCAL-00005" summary="1">
-      <created>1655666778076</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1655666778076</updated>
     </task>
     <task id="LOCAL-00006" summary="1">
       <created>1655667060049</created>
@@ -524,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659357558974</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Задание 18">
+      <created>1659368975033</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1659368975033</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -539,7 +533,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="исправление 4 задания" />
     <MESSAGE value="созданы пакеты для разных зон ответственности_1" />
     <MESSAGE value="выделен класс для управления сессиями" />
     <MESSAGE value="выделен класс для работы с группами" />
@@ -564,6 +557,7 @@
     <MESSAGE value="Задание 14 исправление" />
     <MESSAGE value="Задание 17" />
     <MESSAGE value="Отделение тестовых данных от сценария" />
-    <option name="LAST_COMMIT_MESSAGE" value="Отделение тестовых данных от сценария" />
+    <MESSAGE value="Задание 18" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание 18" />
   </component>
 </project>
