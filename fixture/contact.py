@@ -121,6 +121,28 @@ class ContactHelper:
         self.return_to_home_page()
         self.contact_cache = None
 
+    def delete_contact_by_id(self, id):
+        wd = self.app.wd
+        self.return_to_home_page()
+        self.select_contact_by_id(id)
+        wd.find_element_by_xpath("//input[@value='Delete']").click()
+        alert = wd.switch_to_alert()
+        alert.accept()
+
+        self.return_to_home_page()
+        self.contact_cache = None
+
+    def select_contact_by_id(self, id):
+        wd = self.app.wd
+        index = 0
+        for row in wd.find_elements_by_name("entry"):
+            cell = row.find_elements_by_tag_name("td")[7]
+            s = cell.find_element_by_xpath("./a[@href]").get_attribute("href")
+            id_number = (s.split("id=")[1])
+            if id_number == id:
+                break
+            index += 1
+        self.select_contact_by_index(index)
 
     def delete_first_contact(self):
         self.delete_contact_by_index(0)
@@ -220,8 +242,24 @@ class ContactHelper:
         return Contact(homephone=homephone, mobilephone=mobilephone,
                        workphone=workphone, secondaryphone=secondaryphone)
 
+    def modify_contact_by_id(self, contact):
+        wd = self.app.wd
+        self.return_to_home_page()
+        self.select_contact_by_id_to_modify(contact.id)
+        self.fill_data(contact)
+        wd.find_element_by_xpath("//div[@id='content']/form/input[22]").click()
+        self.return_to_home_page()
+        self.contact_cache = None
 
-
+    def select_contact_by_id_to_modify(self, id):
+        wd = self.app.wd
+        for row in wd.find_elements_by_name("entry"):
+            cell = row.find_elements_by_tag_name("td")[7]
+            s = cell.find_element_by_xpath("./a[@href]").get_attribute("href")
+            id_number = s.split("id=")[1]
+            if id_number == str(id):
+                cell.find_element_by_tag_name("a").click()
+                break
 
 
 
