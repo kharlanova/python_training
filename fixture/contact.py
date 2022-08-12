@@ -1,3 +1,5 @@
+import random
+
 from selenium.webdriver.support.select import Select
 from model.contact import Contact
 import re
@@ -260,6 +262,43 @@ class ContactHelper:
             if id_number == str(id):
                 cell.find_element_by_tag_name("a").click()
                 break
+
+    def add_contact_to_random_group(self, index):
+        wd = self.app.wd
+        self.return_to_home_page()
+        self.select_contact_by_index(index)
+        select = Select(wd.find_element_by_name("to_group"))
+        chosen_group = random.choice(select.options)
+        chosen_group_id = chosen_group.get_attribute("value")
+        select.select_by_value(chosen_group_id)
+        wd.find_element_by_xpath("//input[@value='Add to']").click()
+        self.return_to_home_page()
+        return chosen_group_id
+
+    def add_contact_to_group(self, index, group_id):
+        wd = self.app.wd
+        self.return_to_home_page()
+        self.select_contact_by_index(index)
+        select = Select(wd.find_element_by_name("to_group"))
+        select.select_by_value(group_id)
+        wd.find_element_by_xpath("//input[@value='Add to']").click()
+        self.return_to_home_page()
+
+    def select_group(self, group_id):
+        wd = self.app.wd
+        self.return_to_home_page()
+        select = Select(wd.find_element_by_name ("group"))
+        select.select_by_value(group_id)
+        self.contact_cache = None
+
+    def delete_contact_from_group(self, index):
+        wd = self.app.wd
+        self.select_contact_by_index(index)
+        wd.find_element_by_xpath("//input[@name='remove']").click()
+        self.return_to_home_page()
+        select = Select(wd.find_element_by_name("group"))
+        select.select_by_value("")
+        self.contact_cache = None
 
 
 
