@@ -31,7 +31,9 @@ class Contact:
     def __repr__(self):
         return "%s:%s:%s" % (self.id,self.firstname,self.lastname)
     def __eq__(self, other):
-        return (self.id is None or other.id is None or self.id == other.id) and self.firstname.rstrip(" ") == other.firstname.rstrip(" ") and self.lastname.rstrip(" ") == other.lastname.rstrip(" ")
+        return (self.id is None or other.id is None or str(self.id) == str(other.id))\
+               and self.firstname.rstrip(" ") == other.firstname.rstrip(" ") \
+               and self.lastname.rstrip(" ") == other.lastname.rstrip(" ")
 
     def id_or_max(self):
         if self.id:

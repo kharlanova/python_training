@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27493168-aecf-46dd-ab13-eb730d4e35a3" name="Changes" comment="Задание 21 полная версия">
-      <change afterPath="$PROJECT_DIR$/test/test_contact_to_group.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_delete_contact_from_group.py" afterDir="false" />
+    <list default="true" id="27493168-aecf-46dd-ab13-eb730d4e35a3" name="Changes" comment="Задание 22">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chek_db_connectoin.py" beforeDir="false" afterPath="$PROJECT_DIR$/chek_db_connectoin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/orm.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/orm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_contact_to_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_contact_to_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_delete_contact_from_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_delete_contact_from_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +61,7 @@
       <recent name="C:\Users\Jul\PycharmProjects\python_training\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_contact_to_group.py">
+  <component name="RunManager" selected="Python tests.pytest for test_contact_to_group.test_add_contact_to_group">
     <configuration name="chek_db_connectoin" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,10 +156,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_contact_to_group.test_add_contact_to_group" />
         <item itemvalue="Python tests.pytest in test_contact_to_group.py" />
         <item itemvalue="Python tests.pytest in test_delete_contact_from_group.py" />
         <item itemvalue="Python tests.pytest for test_delete_contact_from_group.test_delete_contact_from_group" />
-        <item itemvalue="Python tests.pytest for test_contact_to_group.test_add_contact_to_group" />
         <item itemvalue="Python.chek_db_connectoin" />
       </list>
     </recent_temporary>
@@ -175,13 +172,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655633244517</updated>
-    </task>
-    <task id="LOCAL-00011" summary="metod">
-      <created>1655837208461</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1655837208461</updated>
     </task>
     <task id="LOCAL-00012" summary="metod1">
       <created>1655927475560</created>
@@ -519,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659869757503</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Задание 22">
+      <created>1660319808420</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1660319808420</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -537,7 +534,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Задание 7" />
     <MESSAGE value="оптимизация ввода данных в формы" />
     <MESSAGE value="Повышаем &quot;интеллектуальность&quot; фикстуры: валидация фикстуры перед каждым тестом" />
     <MESSAGE value="Задание №8: Реализовать проверку валидности фикстуры и проверку состояния сессии" />
@@ -562,6 +558,28 @@
     <MESSAGE value="Исправление задания 20" />
     <MESSAGE value="Задание 21" />
     <MESSAGE value="Задание 21 полная версия" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание 21 полная версия" />
+    <MESSAGE value="Задание 22" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание 22" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_contact_to_group.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_contact_to_group.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_contact_to_group.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
