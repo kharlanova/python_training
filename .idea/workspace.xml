@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27493168-aecf-46dd-ab13-eb730d4e35a3" name="Changes" comment="Задание 22">
+    <list default="true" id="27493168-aecf-46dd-ab13-eb730d4e35a3" name="Changes" comment="Задание 22 доделки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_contact_to_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_contact_to_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_delete_contact_from_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_delete_contact_from_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,13 +169,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655633244517</updated>
-    </task>
-    <task id="LOCAL-00012" summary="metod1">
-      <created>1655927475560</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1655927475560</updated>
     </task>
     <task id="LOCAL-00013" summary="выделенные вспомогательные методы и классы">
       <created>1655932217902</created>
@@ -516,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660319808420</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Задание 22 доделки">
+      <created>1660579037910</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1660579037910</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -534,7 +531,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="оптимизация ввода данных в формы" />
     <MESSAGE value="Повышаем &quot;интеллектуальность&quot; фикстуры: валидация фикстуры перед каждым тестом" />
     <MESSAGE value="Задание №8: Реализовать проверку валидности фикстуры и проверку состояния сессии" />
     <MESSAGE value="Задание №7 доработка" />
@@ -559,7 +555,8 @@
     <MESSAGE value="Задание 21" />
     <MESSAGE value="Задание 21 полная версия" />
     <MESSAGE value="Задание 22" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание 22" />
+    <MESSAGE value="Задание 22 доделки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание 22 доделки" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
