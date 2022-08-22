@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27493168-aecf-46dd-ab13-eb730d4e35a3" name="Changes" comment="Задание 22 доделки">
+    <list default="true" id="27493168-aecf-46dd-ab13-eb730d4e35a3" name="Changes" comment="Requirements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,13 +169,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655633244517</updated>
-    </task>
-    <task id="LOCAL-00013" summary="выделенные вспомогательные методы и классы">
-      <created>1655932217902</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1655932217902</updated>
     </task>
     <task id="LOCAL-00014" summary="выделенные вспомогательные методы и классы_редакт">
       <created>1655985003315</created>
@@ -513,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660579037910</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Requirements">
+      <created>1661164771378</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1661164771378</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -531,7 +531,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Повышаем &quot;интеллектуальность&quot; фикстуры: валидация фикстуры перед каждым тестом" />
     <MESSAGE value="Задание №8: Реализовать проверку валидности фикстуры и проверку состояния сессии" />
     <MESSAGE value="Задание №7 доработка" />
     <MESSAGE value="Задание №8 доработка" />
@@ -556,7 +555,8 @@
     <MESSAGE value="Задание 21 полная версия" />
     <MESSAGE value="Задание 22" />
     <MESSAGE value="Задание 22 доделки" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание 22 доделки" />
+    <MESSAGE value="Requirements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Requirements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

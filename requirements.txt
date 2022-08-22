@@ -1,6 +1,5 @@
 pytest
-pytest_add
-selenium
+selenium==3.141.0
 jsonpickle
 pony
 pymysql
